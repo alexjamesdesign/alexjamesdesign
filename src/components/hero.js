@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Hero = () => {
-    render (
+    return (
         <div>Hero section</div>
     )
 }
