@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    @apply uppercase text-left font-medium tracking-widest;
+}
+
+.title {
+    @apply uppercase text-left font-medium;
+}
