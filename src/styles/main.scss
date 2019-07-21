@@ -30,6 +30,11 @@ h1 {
   font-weight: 600;
 }
 
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
 // CUSTOM
 
 .container {
@@ -60,5 +65,35 @@ h1 {
   
   @media (min-width: 768px) {
     padding: 0px 0px 0px calc(10% + 110px);
+  }
+}
+
+.designer-developer-outer {
+  &.left {
+    justify-content: flex-start;
+    
+    .dd-text {
+      order: 2;
+    }
+
+    .dd-img {
+      order: 1;
+    }
+  }
+
+  &.right {
+    justify-content: flex-end;
+
+    .dd-text {
+      order: 1;
+
+      .title {
+        text-align: right;
+      }
+    }
+
+    .dd-img {
+      order: 2;
+    }
   }
 }
