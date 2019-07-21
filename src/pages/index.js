@@ -7,12 +7,14 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
+import DesignerDeveloper from "../components/designer-developer"
 
 const IndexPage = props => (
   <Layout>
     <SEO title="Home" />
 
     <Hero />
+    <DesignerDeveloper />
 
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
