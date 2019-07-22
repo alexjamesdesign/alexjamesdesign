@@ -87,9 +87,10 @@ p {
 
 .hero-outer {
   overflow: auto;
-  height: 500px;
+  height: 550px;
+  padding: 0px 0px 50px 0px;
   background-size: 130%;
-  background-position: center calc(0% - 100px) ; 
+  background-position: center calc(0% - 100px); 
 
   @media (min-width: 640px) {
     background-size: 110%;
@@ -111,14 +112,33 @@ p {
 }
 
 .designer-developer-container {
-  @include tablet {
-    margin-top: -50px;
-  }
+  margin-top: -50px;
 }
 
 .designer-developer-outer {
 
+  .dd-img {
+    background-size: cover;
+    position: relative;
+
+    @include tablet {
+      min-height: 350px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: $purple;
+    }
+  }
+
   .dd-text {
+    margin-top: -40px;
+
     @include tablet {
       margin-top: 50px;
     }
@@ -126,14 +146,25 @@ p {
 
   &.left {
     justify-content: flex-start;
+
+    .dd-img {
+      position: relative;
+
+      &:after {
+        background: linear-gradient(180deg, #00F0FF 0%, rgba(196, 196, 196, 0) 85.42%);
+      }
+    }
     
     .dd-text {
-      order: 2;
       z-index: 100;
-
+      order: 2;
+    
       .title {
+        padding: 0px 0px 0px 20px;
+        
         @include tablet {
           margin-left: -80px;
+          padding: 0;
         }
         
       }
@@ -147,8 +178,8 @@ p {
     }
 
     .dd-img {
-      order: 1;
       background-color: $blue;
+      order: 1;
     }
   }
 
@@ -156,14 +187,20 @@ p {
     justify-content: flex-end;
 
     .dd-text {
-      order: 1;
       z-index: 100;
+      order: 2;
 
+      @include tablet {
+        order: 1;
+      }
+    
       .title {
         text-align: right;
+        padding: 0px 20px 0px 0px;
 
         @include tablet {
           margin-right: -80px;
+          padding: 0px;
         }
       }
 
@@ -175,8 +212,16 @@ p {
     }
 
     .dd-img {
-      order: 2;
       background-color: $purple;
+      order: 1;
+
+      @include tablet {
+        order: 2;
+      }
+
+      &:after {
+        background: linear-gradient(180deg, #D634F8 0%, rgba(196, 196, 196, 0) 85.42%);
+      }
     }
   }
 }
