@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,500&display=swap');
 
+$purple: #D634F8;
+$blue: #00F0FF;
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -74,10 +77,21 @@ h1 {
     
     .dd-text {
       order: 2;
+      z-index: 100;
+
+      .title {
+        margin-left: -80px;
+      }
+
+      .main-content {
+        padding: 0px 0px 0px 100px;
+      }
+
     }
 
     .dd-img {
       order: 1;
+      background-color: $blue;
     }
   }
 
@@ -86,14 +100,21 @@ h1 {
 
     .dd-text {
       order: 1;
+      z-index: 100;
 
       .title {
         text-align: right;
+        margin-right: -80px;
+      }
+
+      .main-content {
+        padding: 0px 100px 0px 0px;
       }
     }
 
     .dd-img {
       order: 2;
+      background-color: $purple;
     }
   }
 }

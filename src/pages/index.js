@@ -19,7 +19,7 @@ const IndexPage = props => (
     <DesignerDeveloper
       position="right"
       title="Designer"
-      backgroundImage={props.data.designerBgImage.absolutePath}
+      backgroundImage={props.data.designerBgImage}
       
       content="I have a passion for all things creative, from interior design through to web design. I’m experienced in web design project serving both the UK and US in a range of different sectors."
     />
