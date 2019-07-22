@@ -1,5 +1,8 @@
 import React from 'react'
 import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
+
+console.log(designerBgImage)
 
 const DesignerDeveloper = (props) => {
     return (
@@ -9,8 +12,8 @@ const DesignerDeveloper = (props) => {
                 <p className="main-content">{props.content}</p>
             </div>
             
-            <div style={{ backgroundImage: `url(${props.backgroundImage})` }} className="dd-img lg:w-1/4 bg-black">
-
+            <div className="dd-img lg:w-1/4 bg-black" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+                
             </div>
         </div>  
     )
