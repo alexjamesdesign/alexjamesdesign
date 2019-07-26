@@ -7,7 +7,7 @@ function SkillSet(props) {
     ));
  
     return(
-        <ul className="skill-icons flex mx-6">
+        <ul className="skill-icons flex m:mx-6">
             {skillsList}
         </ul>
     )
