@@ -152,6 +152,13 @@ p {
   &.left {
     justify-content: flex-start;
 
+    .skill-icons {
+    
+      @include tablet {
+        margin-left: 100px;
+      }
+    }
+
     .dd-img {
       position: relative;
 
@@ -191,6 +198,13 @@ p {
   &.right {
     justify-content: flex-end;
 
+    .skill-icons {
+      @include tablet {
+        margin-left: 30px;
+      }
+      
+    }
+
     .dd-text {
       z-index: 100;
       order: 2;
@@ -227,6 +241,15 @@ p {
       &:after {
         background: linear-gradient(180deg, #D634F8 0%, rgba(196, 196, 196, 0) 85.42%);
       }
+    }
+  }
+
+  .skill-icons {
+    max-width: 120px;
+    padding-top: 20px;
+
+    img {
+      max-width: 44px;
     }
   }
 }

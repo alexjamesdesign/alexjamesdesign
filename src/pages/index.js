@@ -11,6 +11,9 @@ import DesignerDeveloper from "../components/designer-developer"
  
 import WordPressIcon from "../images/icon-wordpress.svg"
 import ReactIcon from "../images/icon-react.svg" 
+import FigmaIcon from "../images/icon-figma.svg" 
+import XDIcon from "../images/icon-xd.svg" 
+
  
 import DesignerImage from "../images/designer-background.jpg"
 import DeveloperImage from "../images/developer-background.jpg"
@@ -31,12 +34,12 @@ const devskills = [
 const designskills = [
     {
         name: 'XD',
-        icon: `${WordPressIcon}`,
+        icon: `${XDIcon}`,
         alt: 'React Icon'
     },
     {
         name: 'Figma',
-        icon: `${ReactIcon}`,
+        icon: `${FigmaIcon}`,
         alt: 'Figma Icon'
     }
 ]
