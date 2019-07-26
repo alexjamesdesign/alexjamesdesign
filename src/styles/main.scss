@@ -282,3 +282,55 @@ p {
             transform: translateY(0px);
   }
 }
+
+
+
+
+
+
+div.hero-icon, div.hero-text {
+  display:inline-block;
+  overflow:hidden;
+}
+
+img.hero-icon {
+  animation: showup 7s forwards 1;
+}
+
+div.hero-text {
+  @include tablet {
+    animation: reveal 7s forwards 1;
+  }
+}
+
+div.hero-text h1 {
+  @include tablet {
+    margin-left:-355px;
+    animation: slidein 7s forwards 1;
+
+    span {
+      animation: slidein 8s forwards 1;
+    }
+  }
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:100%;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}

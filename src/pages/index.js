@@ -11,37 +11,61 @@ import DesignerDeveloper from "../components/designer-developer"
  
 import WordPressIcon from "../images/icon-wordpress.svg"
 import ReactIcon from "../images/icon-react.svg" 
+import GitIcon from "../images/icon-git.svg" 
+import SassIcon from "../images/icon-sass.svg" 
 import FigmaIcon from "../images/icon-figma.svg" 
 import XDIcon from "../images/icon-xd.svg" 
+import PhotoshopIcon from "../images/icon-photoshop.svg" 
+import InvisionIcon from "../images/icon-invision.svg" 
 
  
 import DesignerImage from "../images/designer-background.jpg"
 import DeveloperImage from "../images/developer-background.jpg"
  
 const devskills = [
-    {
-        name: 'React',
-        icon: `${WordPressIcon}`,
-        alt: 'React Icon'
-    },
-    {
-        name: 'WordPress',
-        icon: `${ReactIcon}`,
-        alt: 'WordPress Icon'
-    }
+  {
+    name: 'React',
+    icon: `${WordPressIcon}`,
+    alt: 'React Icon'
+  },
+  {
+    name: 'WordPress',
+    icon: `${ReactIcon}`,
+    alt: 'WordPress Icon'
+  },
+  {
+    name: 'Git',
+    icon: `${GitIcon}`,
+    alt: 'Git Icon'
+  },
+  {
+    name: 'Sass',
+    icon: `${SassIcon}`,
+    alt: 'Sass Icon'
+  }
 ]
  
 const designskills = [
-    {
-        name: 'XD',
-        icon: `${XDIcon}`,
-        alt: 'React Icon'
-    },
-    {
-        name: 'Figma',
-        icon: `${FigmaIcon}`,
-        alt: 'Figma Icon'
-    }
+  {
+    name: 'XD',
+    icon: `${XDIcon}`,
+    alt: 'React Icon'
+  },
+  {
+    name: 'Photoshop',
+    icon: `${PhotoshopIcon}`,
+    alt: 'Photoshop Icon'
+  },
+  {
+    name: 'Figma',
+    icon: `${FigmaIcon}`,
+    alt: 'Figma Icon'
+  },
+  {
+    name: 'Invision',
+    icon: `${InvisionIcon}`,
+    alt: 'Invision Icon'
+  }
 ]
  
 const IndexPage = (props) => (
@@ -59,7 +83,7 @@ const IndexPage = (props) => (
         backgroundImage={DesignerImage}
         skillcat={designskills}
  
-        content="I have a passion for all things creative, from interior design through to web design. I’m experienced in web design project serving both the UK and US in a range of different sectors."
+        content="I have a passion for all things creative, from interior design through to web design. I’m experienced in web design project serving both the UK and US in a range of different sectors from blinds to luxury swimming pools. I'm comfortable in a range of UI design and prototyping tools."
       />
  
       <DesignerDeveloper
@@ -68,9 +92,9 @@ const IndexPage = (props) => (
         backgroundImage={DeveloperImage}
         skillcat={devskills}
  
-        content="I have experience in creating custom WordPress themes with speed and accessability in mind. I use Git version control to colaborate on projects across the company I currently work as well an using SCSS and jQuery to enhance UI elements.
- 
-       I’ve been teaching myself React JS in my spare time as well as experimenting with Gatsby, Netlify and other web technologies to progress my skillset."
+        content="I have experience in creating custom WordPress themes with speed and accessability in mind. Using Git version control to collaborate on projects across the company I currently work as well an using SCSS and jQuery to enhance UI elements.
+  
+        I've been learning React JS in my spare time as well as experimenting with Gatsby, Tailwind CSS and other web technologies to progress my skillset."
       />
  
     </div>
