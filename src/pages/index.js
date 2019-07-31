@@ -8,6 +8,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import DesignerDeveloper from "../components/designer-developer"
+import Timeline from "../components/timeline"
+
  
 import WordPressIcon from "../images/icon-wordpress.svg"
 import ReactIcon from "../images/icon-react.svg" 
@@ -98,6 +100,8 @@ const IndexPage = (props) => (
       />
  
     </div>
+
+    <Timeline />
  
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
