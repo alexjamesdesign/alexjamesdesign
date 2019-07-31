@@ -73,7 +73,7 @@ p {
 
 // CUSTOM
 
-.container {
+.wrapper {
   max-width: 1600px;
   margin: 0 auto;
   overflow: auto;
@@ -187,7 +187,7 @@ p {
 
       .main-content {
         @include tablet {
-          padding: 20px 30px 0px 100px;
+          padding: 30px 30px 0px 100px;
         }
       }
 
@@ -223,13 +223,13 @@ p {
 
         @include tablet {
           margin-right: -80px;
-          padding: 0px;
+          padding: 30px 0px 0px 0px;
         }
       }
 
       .main-content {
         @include tablet {
-          padding: 20px 100px 0px 30px;
+          padding: 30px 100px 0px 30px;
         }
       }
     }

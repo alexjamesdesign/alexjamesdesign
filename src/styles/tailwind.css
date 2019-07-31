@@ -7,5 +7,5 @@ h1 {
 }
 
 .title {
-    @apply uppercase text-left font-medium;
+    @apply uppercase text-left font-bold;
 }

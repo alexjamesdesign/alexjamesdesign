@@ -4,9 +4,9 @@ import SkillSet from "./skills"
 const DesignerDeveloper = (props) => {
  
     return (
-        <div className={`designer-developer-outer container flex w-full flex flex-wrap mb-20 tablet:mb-0 ${props.position}`}>
+        <div className={`designer-developer-outer wrapper pb-20 flex w-full flex flex-wrap mb-20 tablet:mb-0 ${props.position}`}>
             <div className="dd-text tablet:w-3/4">
-                <p className="title text-5xl md:text-6xl text-black">{props.title}</p>
+                <p className="title text-5xl md:text-6xl text-black weight-600">{props.title}</p>
                 <p className="main-content">{props.content}</p>
  
                 <SkillSet skillcat={props.skillcat} />
